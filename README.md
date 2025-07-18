@@ -56,6 +56,24 @@ Ensure:
 - File paths to the project root are correct
 - The trained model paths are accurately referenced in the analysis notebook
 
+## Repository Contents & Downloads
+
+This repository includes:
+- `data/synthetic_intern_feedback.csv` — Synthetic dataset of 100,000 internship feedback entries.
+- `main.ipynb` — End-to-end workflow for data preprocessing, model training, and sentiment analysis.
+- `analyze data/analyze.ipynb` — Notebook for extracting themes from negative feedback.
+- All source code for data processing and model training in the `utils/` and `models/` directories.
+
+### Not Included (Download Separately)
+
+Due to file size limitations, the following files are **not included in this repository**:
+- `utils/preprocessed_data_tfidf.pkl` — Preprocessed TF-IDF features.
+- `utils/preprocessed_data_transformer.pt` — Preprocessed tokenized inputs for DistilBERT.
+- `trained models/logistic_regression_model.pkl` — Trained Logistic Regression model.
+- `trained models/bert_model/` — Directory containing the fine-tuned DistilBERT model.
+
+These files can be made available upon request. Alternatively, you can regenerate them locally by running the given notebooks, provided your system is capable of handling model training efficiently.
+
 ## Author
 Crafted with care by Moazam — NLP enthusiast & ML practitioner in this economy. 😮‍💨
 >Transforming feedback into insights.
